@@ -1,0 +1,4 @@
+ajax.googleapis.com
+www.facebook.com
+twitter.com
+https://play.google.com/store/apps/details?id=tr.edu.akdeniz.mobilev2
