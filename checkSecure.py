@@ -13,7 +13,7 @@ def Help():
 	print "-g\t-> Make group of Secure and Insecure links."
 	print "-l\t-> To give a url file INFO: If link file fails in last link\ntry to give a blank line in the end."
 	print "-o\t-> To get txt output file of insecure urls."
-	print "  \t-> To use it you have to use -g too.\n"
+	print "  \t->(To use it you have to use -g too.)\n"
 	print "INFO: You can add your safe links in 'safe.txt' \n(which have to in the same directory.)\n"
 
 def ShowAll():
@@ -157,7 +157,7 @@ elif ("-l" in argv):
 				url = i
 			print "* Searching for " + url
 			print "----------------------------"
-			links = Search(i[:-1])
+			links = Search(url)
 			
 			if("-a" in argv):
 				ShowAll()
