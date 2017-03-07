@@ -132,7 +132,7 @@ if ("-u" in argv):
 						for j in safe:
 							if "\n" in j:
 								j = j[:-1]
-							if (j in i):
+							if j in i and len(j) >= 1:
 								print i + " -> True"
 								issafe = True
 								break
@@ -189,7 +189,7 @@ elif ("-l" in argv):
 							for j in safe:
 								if "\n" in j:
 									j = j[:-1]
-								if (j in i):
+								if j in i and len(j) >= 1:
 									print i + " -> True"
 									issafe = True
 									break
